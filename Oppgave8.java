@@ -3,43 +3,38 @@ import javax.swing.JOptionPane;
 
 public class Oppgave8 {
     public static void main(String[] args) {
-        Person per = new Person("Per", "Hansen",1973);
-        ArbTaker arbeiderPer = new ArbTaker(per, 12, 2003, 30000, 26.7);
+        Person per = new Person("Per", "Hansen",1974);
+        ArbTaker arbeiderPer = new ArbTaker(per, 12, 2004, 10000, 25.0);
 
         while (true) {
-            String[] options = { "Månedlig Skattetrekk", "Brutto årslønn", "Årlig skatetrekk", "Navn", "Alder", "Antall år ansatt i bedrift","Om personen har jobbet i bedriften i mer en et gitt antall år","Endre lønn", "Endre skatteprosent" ,"Avslutt programmet"};
-            String result =(String) JOptionPane.showInputDialog(null, "Hva vil du gjøre", "valg",
-                JOptionPane.PLAIN_MESSAGE,
-                null, options, options[0]);
+            System.out.println("Vedkommende betaler " + arbeiderPer.MaanedligSkatt()+ "kr i skatt i måneden");
+            System.out.println("Vedkommende har en bruttolønn på " + arbeiderPer.BruttoLoenn()+" kr i året");
+            System.out.println("Vedkommende blir trekt "+arbeiderPer.TotaltSkattetrekk()+" i skatt i året");
+            System.out.println("Vedkommende heter "+arbeiderPer.Navn());
+            System.out.println("Vedkommende er "+arbeiderPer.Alder()+" år gammel");
+            System.out.println("Vedkommende har jobbet i bedriften i " + arbeiderPer.AarIBedrift()+" år");
 
-            if(result==options[0]){
-                showMessageDialog(null,arbeiderPer.MaanedligSkatt());
-            }else if(result==options[1]){
-                showMessageDialog(null,arbeiderPer.BruttoLoenn());
-            }else if(result==options[2]){
-                showMessageDialog(null,arbeiderPer.TotaltSkattetrekk());
-            }else if(result==options[3]){
-                showMessageDialog(null,arbeiderPer.Navn());
-            }else if(result==options[4]){
-                showMessageDialog(null,arbeiderPer.Alder());
-            }else if(result==options[5]){
-                showMessageDialog(null,arbeiderPer.AarIBedrift());
-            }else if(result==options[6]){
+            String[] options = {"Endre lønn", "Endre skatteprosent" ,"Arbeidslengde krav","Avslutt programmet"};
+            int result =JOptionPane.showOptionDialog(null, "Hva vil du gjøre?", null,
+                JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
+                null, options, null);
+            
+            if(result==0){
+                int inputLoenn = Integer.parseInt(showInputDialog("Hva er den nye lønnen?"));
+                arbeiderPer.setMaanedsloenn(inputLoenn);
+                System.out.println("Ny månedslønn er " + arbeiderPer.getMaanedsloenn());
+            }else if(result==1){
+                int inputSkatt = Integer.parseInt(showInputDialog("Hva er den nye skatteprosenten?"));
+                arbeiderPer.setSkatteprosent(inputSkatt);
+                System.out.println("Ny skatteprosent er " + arbeiderPer.getSkatteprosent());
+            }else if(result==2){
                 int input = Integer.parseInt(showInputDialog("Hvor lenge skal personen ha jobbet?"));
                 if(input<=arbeiderPer.AarIBedrift()){
                     showMessageDialog(null,"" + arbeiderPer.Navn() +" Har jobbet i bedriften i " + input + " År eller mer!");
                 }else{
                     showMessageDialog(null,"" + arbeiderPer.Navn() +" Har ikke jobbet i bedriften i " + input + " År eller mer!");
                 }
-            }else if(result==options[7]){
-                int input = Integer.parseInt(showInputDialog("Hva er den nye lønnen?"));
-                arbeiderPer.setMaanedsloenn(input);
-                System.out.println("Ny månedslønn er " + arbeiderPer.getMaanedsloenn());
-            }else if(result==options[8]){
-                int input = Integer.parseInt(showInputDialog("Hva er den nye skatteprosenten?"));
-                arbeiderPer.setSkatteprosent(input);
-                System.out.println("Ny skatteprosent er " + arbeiderPer.getSkatteprosent());
-            }else if(result==options[9]){
+            }else if(result==3){
                 break;
             }
         }
