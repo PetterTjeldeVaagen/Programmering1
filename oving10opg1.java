@@ -1,10 +1,6 @@
 import static javax.swing.JOptionPane.showInputDialog;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-
 import javax.swing.*;
 
 public class oving10opg1 {
@@ -168,7 +164,6 @@ class ArrangementRegister{
         }
     }   
 
-
     public ArrayList<Arrangement> alleArrangementSted(String stedIn){
         ArrayList<Arrangement> arrangementListeForSted = new ArrayList<>();
         for(int i = 0; i < arrangementListe.size(); i++){
@@ -250,8 +245,6 @@ class ArrangementRegister{
         int yearSlutt = Integer.parseInt(datoStringslutt.substring(0, 4));
         int monthSlutt = Integer.parseInt(datoStringslutt.substring(4, 6));
         int daySlutt= Integer.parseInt(datoStringslutt.substring(6, 8));
-
-
 
         for(int i = 0; i < arrangementListe.size(); i++){
             String datoString =Long.toString(arrangementListe.get(i).dato); //Gjør input til 3 variabler
