@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import javax.swing.*;
-
 public class oving10opg2 {
     public static void main(String[] args){
         MenyRegister Menyer = new MenyRegister();
@@ -11,6 +9,7 @@ public class oving10opg2 {
         Menyer.RegistrerRett("Iskrem", "Dessert", 1000, "Ut av fryser inn i kjeften");
         Menyer.RegistrerRett("Ost", "Forrett", 10, "Ut av kjøleskap inn i kjeften");
         System.out.println(Menyer.FinnRett("Pizza").oppskrift);
+        System.out.println(Menyer.FinnRett("Fisk").navn);
 
         String typeRett="Hovedrett";
         for (int i = 0; i <Menyer.FinnRettEtterType(typeRett).size(); i++) {
@@ -18,11 +17,11 @@ public class oving10opg2 {
         }
 
         String[] Meny1Navn = {"Pizza", "Pasta", "Iskrem"};
-        Menyer.RegistrerMeny(Meny1Navn, "Meny 1");
         String[] Meny2Navn = {"Ost"};
+        Menyer.RegistrerMeny(Meny1Navn, "Meny 1");
         Menyer.RegistrerMeny(Meny2Navn, "Meny 2");
 
-        System.out.println(Menyer.FinnMenyerInnenPris(1000).get(0).menyNavn);            
+        System.out.println(Menyer.FinnMenyerInnenPris(10000).get(0).menyNavn);            
     }
 }
 
@@ -35,7 +34,7 @@ class MenyRegister{
     }
 
     public Rett FinnRett(String soekRettNavn){
-        Rett riktigRett=new Rett("Rett ikke funnet","",0.0,""); 
+        Rett riktigRett=new Rett("Rett ikke funnet","Rett ikke funnet",-1,"Rett ikke funnet"); 
         for(int i =0; i<registrerteRetter.size();i++){
             if(registrerteRetter.get(i).navn.toLowerCase().equals(soekRettNavn.toLowerCase())){
                 riktigRett=registrerteRetter.get(i);

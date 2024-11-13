@@ -39,7 +39,7 @@ public class oving10opg1 {
             null, options, null);
     switch (result) {
         case 0:
-            String input = showInputDialog("Hvor ønsker du å finne et arrangements");
+            String input = showInputDialog("Hvor ønsker du å finne et arrangement");
             PrintArrangement(arrangementer.alleArrangementSted(input));
             break;
         case 1:
@@ -91,6 +91,7 @@ public class oving10opg1 {
                 if (resultSlutt == JOptionPane.OK_OPTION) {
                     sluttDato=yearInputslutt.getText()+""+monthInputslutt.getText()+""+dayInputslutt.getText();
                     PrintArrangement(arrangementer.alleArrangementToTid(Long.parseLong(startDato), Long.parseLong(sluttDato)));
+
                 }
             }
             break;
@@ -101,7 +102,6 @@ public class oving10opg1 {
             JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
             null, optionsSort, null);
             PrintArrangement(arrangementer.sorterArrangement(resultSort));
-
             break;
         case 4:
             System.exit(0);
@@ -248,13 +248,15 @@ class ArrangementRegister{
 
         for(int i = 0; i < arrangementListe.size(); i++){
             String datoString =Long.toString(arrangementListe.get(i).dato); //Gjør input til 3 variabler
+            
             int year = Integer.parseInt(datoString.substring(0, 4));
             int month = Integer.parseInt(datoString.substring(4, 6));
             int day= Integer.parseInt(datoString.substring(6, 8));
-            if(year<= yearSlutt && year>=yearStart){ //fungerer ikke på grunn av måned
-                if(month<yearSlutt && month>yearStart){
+            
+            if(year<= yearSlutt && year>=yearStart){
+                if(month<monthSlutt && month>monthStart){
                     arrangementListeForToDato.add(arrangementListe.get(i));
-                }else if (month==yearSlutt){
+                }else if (month==monthSlutt){
                     if(day<=daySlutt){
                         arrangementListeForToDato.add(arrangementListe.get(i));
                     }
@@ -263,7 +265,6 @@ class ArrangementRegister{
                         arrangementListeForToDato.add(arrangementListe.get(i));
                     }
                 }
-                
             }
         }
         return arrangementListeForToDato;
