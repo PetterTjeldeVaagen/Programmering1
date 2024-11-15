@@ -1,0 +1,170 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="794" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-1" value="PropertyRegister" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="340" y="70" width="100" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ocbvki9VdeWu9jOjLr7o-1">
+          <mxGeometry x="45" y="70" width="10" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-3" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="ocbvki9VdeWu9jOjLr7o-1" target="ocbvki9VdeWu9jOjLr7o-11">
+          <mxGeometry x="1" y="87" relative="1" as="geometry">
+            <mxPoint x="-150" y="80" as="sourcePoint" />
+            <mxPoint x="85" y="67" as="offset" />
+            <mxPoint x="-210" y="-40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-4" value="Property" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="100" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ocbvki9VdeWu9jOjLr7o-4">
+          <mxGeometry x="45" y="80" width="10" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-6" value="getCountyNumber" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="ocbvki9VdeWu9jOjLr7o-2" target="ocbvki9VdeWu9jOjLr7o-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="495" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="480" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-7" value="return countyName" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="260" />
+            </Array>
+            <mxPoint x="565" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-8" value="getCountyName" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="ocbvki9VdeWu9jOjLr7o-2" target="ocbvki9VdeWu9jOjLr7o-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="230" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="480" y="230" />
+            </Array>
+            <mxPoint x="559.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-9" value="return countyNumber" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="ocbvki9VdeWu9jOjLr7o-2">
+          <mxGeometry x="0.5294" y="-10" relative="1" as="geometry">
+            <mxPoint x="400" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="190" />
+            </Array>
+            <mxPoint x="400" y="190" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-11" value="Main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="210" y="70" width="100" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ocbvki9VdeWu9jOjLr7o-11">
+          <mxGeometry x="45" y="70" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-14" value="PrintAllProperties" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="ocbvki9VdeWu9jOjLr7o-11" target="ocbvki9VdeWu9jOjLr7o-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="340" y="150" />
+            </Array>
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-15" value="return lotNumber" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="389.5" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="485" y="320" />
+            </Array>
+            <mxPoint x="565" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-16" value="getLotNumber" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="290" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="475" y="290" />
+            </Array>
+            <mxPoint x="565" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-19" value="return sectionNumber" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="390" />
+            </Array>
+            <mxPoint x="570" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-20" value="getSectionNumber" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="360" />
+            </Array>
+            <mxPoint x="570" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-21" value="return name" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="460" />
+            </Array>
+            <mxPoint x="570" y="460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-22" value="getName" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="430" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="430" />
+            </Array>
+            <mxPoint x="570" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-23" value="return area" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="530" />
+            </Array>
+            <mxPoint x="570" y="530" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-24" value="getArea" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="500" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="500" />
+            </Array>
+            <mxPoint x="570" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-25" value="return ownerName" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="600" />
+            </Array>
+            <mxPoint x="570" y="600" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocbvki9VdeWu9jOjLr7o-26" value="getOwnerName" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="570" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="570" />
+            </Array>
+            <mxPoint x="570" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
